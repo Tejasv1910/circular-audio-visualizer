@@ -27,6 +27,7 @@ The application captures microphone input and visualizes frequency data with smo
 
 ## 📸 Demo
 > Allow microphone access and speak to see the visualization.
+![Demo Screenshot](https://github.com/user-attachments/assets/49764f39-db89-47be-8885-1e73bc91ec8b)
 
 ---
 
