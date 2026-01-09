@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Visualizer</title>
+    <style>
+        body{
+            margin: 0;
+            background: #0b0b0b;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #00ffcc;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #status {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .recording {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+
+        canvas {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleBtn">Start Microphone</button>
+    <div id="status">Mic Off</div>
+
+    <canvas id="canvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
